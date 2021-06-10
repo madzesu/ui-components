@@ -13,6 +13,7 @@ const getTypographyComponent = (variant) => {
     case "h5":
     case "h6":
       return Header(variant);
+    case 'label':
     case 'button':
       return Label(variant);
     default:

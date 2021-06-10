@@ -5,7 +5,7 @@ import styles from "./styles";
 
 const StyledButton = styled.button`
   ${(props) => props.variant === "primary" && styles.primary(props)}
-  ${(props) => props.secondary && styles.secondary(props)}
+  ${(props) => props.variant === "secondary" && styles.secondary(props)}
 `;
 
 const Button = ({ children, ...props }) => {
