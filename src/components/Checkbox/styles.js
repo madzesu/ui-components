@@ -4,7 +4,7 @@ export const base = (props) => `
   box-sizing: border-box;
   display: inline-flex;
   cursor: pointer;
-  transition: all ${transition.duration}ms ease;
+  transition: all ${transition.duration.default}ms ease;
   padding: 0.5em 1em;
   border-radius: 2px;
 `;

@@ -1,15 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import Typography from "../Typography";
 import styles from "./styles";
 
-const Button = styled.button`
-  ${(props) => props.primary && styles.primary(props)}
+const StyledButton = styled.button`
+  ${(props) => props.variant === "primary" && styles.primary(props)}
   ${(props) => props.secondary && styles.secondary(props)}
 `;
 
-// const Button = (props) => {
-//   console.log('styles', styles);
-//   return <button {...props} className={styles.button} />;
-// };
+const Button = ({ children, ...props }) => {
+  console.log("styles", styles);
+  return (
+    <StyledButton {...props}>
+      <Typography variant="button">{children}</Typography>
+    </StyledButton>
+  );
+};
 
 export default Button;

@@ -3,8 +3,7 @@ import Button from '.';
 const ButtonDemo = () => {
   return (
     <div>
-      <Button primary>primary</Button>
-      <Button secondary>secondary</Button>
+      <Button variant="primary">primary</Button>
     </div>
   )
 };
